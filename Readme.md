@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Руслан Писарев](https://up.htmlacademy.ru/htmlcss/20/user/646031).
-* Наставник: [Филипп Шамсиев](https://htmlacademy.ru/profile/toolx).
+* Наставник: [Филипп Шамсиев](https://up.htmlacademy.ru/htmlcss/20/user/70260).
 
 ---
 
