@@ -14,13 +14,13 @@
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
-          <li><a href="#">Гостиницы</a></li>
+          <li><a class="site-navigation-active" href="#">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
     <main class="container">
       <section class="filter">
-        <!-- -->
+        <!-- form -->
       </section>
       <section class="catalog-sort">
         <p class="sort-count">Найдено: 3</p>
@@ -30,20 +30,22 @@
           <li class="sort-item">По типу</li>
           <li class="sort-item">По рейтенгу</li>
         </ul>
-        <span>^</span>
-        <span>^</span>
+        <!-- a or button -->
+        <ul class="sort-page">
+          <li class="sort-page-up"><a href="#">Сортировка по возрастанию</a></li>
+          <li class="sort-page-down sort-page-active"><a href="#">Сортировка по убыванию</a></li>
+        </ul>
+        <!-- /////////// -->
       </section>
       <section class="search-result">
         <h2 class="visually-hidden">Найденные гостиницы:</h2>
         <article class="hotel">
-          <h3 class="hotel-name">Amara Resort & Spa</h3>
-          <a class="hotel-photo" href="#">
-            <img class="hotel-img" src="img/hotel-1.png" width="135" height="90" alt="Amara Resort & Spa">
-          </a>
+          <h3 class="hotel-name"><a class="hotel-link" href="#">Amara Resort & Spa</a></h3>
+          <img class="hotel-img" src="img/hotel-1.png" width="135" height="90" alt="Amara Resort & Spa">
           <p class="hotel-type">Гостиница</p>
-          <a class="button button-hotel-detail" href="#">ПОДРОБНЕЕ</a>
-          <p class="hotel-coast">ОТ 4000 Р.</p>
-          <span class="button-hotel-booking">ЗАБРОНИРОВАТЬ</span>
+          <a class="button button-hotel-detail" href="#">Подробнее</a>
+          <p class="hotel-coast">От 4000 Р.</p>
+          <span class="button-hotel-booking">Забронировать</span>
           <div class="hotel-stars">
             <span class="hotel-star">*</span>
             <span class="hotel-star">*</span>
@@ -53,14 +55,12 @@
           <p class="hotel-rate">Рейтинг:8,5</p>
         </article>
         <article class="hotel">
-          <h3 class="hotel-name">Desert Quail Inn</h3>
-          <a class="hotel-photo" href="#">
-            <img class="hotel-img" src="img/hotel-2.png" width="135" height="90" alt="Desert Quail Inn">
-          </a>
+          <h3 class="hotel-name"><a class="hotel-link" href="#">Desert Quail Inn</a></h3>
+          <img class="hotel-img" src="img/hotel-2.png" width="135" height="90" alt="Desert Quail Inn">
           <p class="hotel-type">Мотель</p>
-          <a class="button button-hotel-detail" href="#">ПОДРОБНЕЕ</a>
-          <p class="hotel-coast">ОТ 3000 Р.</p>
-          <span class="button-hotel-booking">ЗАБРОНИРОВАТЬ</span>
+          <a class="button button-hotel-detail" href="#">Подробнее</a>
+          <p class="hotel-coast">От 3000 Р.</p>
+          <span class="button-hotel-booking">Забронировать</span>
           <div class="hotel-stars">
             <span class="hotel-star">*</span>
             <span class="hotel-star">*</span>
@@ -69,14 +69,12 @@
           <p class="hotel-rate">Рейтинг:8,9</p>
         </article>
         <article class="hotel">
-          <h3 class="hotel-name">Villas at Poco Diablo</h3>
-          <a class="hotel-photo" href="#">
-            <img class="hotel-img" src="img/hotel-3.png" width="135" height="90" alt="Villas at Poco Diablo">
-          </a>
+          <h3 class="hotel-name"><a class="hotel-link" href="#">Villas at Poco Diablo</a></h3>
+          <img class="hotel-img" src="img/hotel-3.png" width="135" height="90" alt="Villas at Poco Diablo">
           <p class="hotel-type">Апартаменты</p>
-          <a class="button button-hotel-detail" href="#">ПОДРОБНЕЕ</a>
-          <p class="hotel-coast">ОТ 2000 Р.</p>
-          <span class="button-hotel-booking">ЗАБРОНИРОВАТЬ</span>
+          <a class="button button-hotel-detail" href="#">Подробнее</a>
+          <p class="hotel-coast">От 2000 Р.</p>
+          <span class="button-hotel-booking">Забронировать</span>
           <div class="hotel-stars">
             <span class="hotel-star">*</span>
             <span class="hotel-star">*</span>
@@ -95,7 +93,7 @@
         </ul>
       </div>
       <p class="footer-copyright">
-        <b>website by</b>
+        <b class="footer-copyright-by">website by</b>
         <a class="footer-academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
       </p>
     </footer>
