@@ -26,8 +26,8 @@
       </section>
       <section class="advantages advantages-photo">
         <h2>Настоящий городок</h2>
-        <span>— №1 —</span>
-        <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
+        <span>&#8212; №1 &#8212;</span>
+        <p>Седона &#8212; не аттракцион для туристов, там течет своя жизнь</p>
         <img src="img/index-city.jpg" width="800" height="256" alt="Седона">
       </section>
       <section class="features">
@@ -49,32 +49,33 @@
       </section>
       <section class="advantages advantages-photo">
         <h2>Там есть Мост Дьявола</h2>
-        <span>— №2 —</span>
+        <span>&#8212; №2 &#8212;</span>
         <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         <img src="img/index-bridge.jpg" width="800" height="256" alt="Мост дьявола">
       </section>
       <section class="advantages">
         <h2>Небольшая площадь</h2>
-        <span>— №3 —</span>
+        <span>&#8212; №3 &#8212;</span>
         <p>Все достопримечательности находятся очень близко</p>
       </section>
       <section class="advantages">
         <h2>Красивая дорога</h2>
-        <span>— №4 —</span>
+        <span>&#8212; №4 &#8212;</span>
         <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
       </section>
       <section class="advantages">
         <h2>Мало туристов</h2>
-        <span>— №5 —</span>
+        <span>&#8212; №5 &#8212;</span>
         <p>Большинство едет в гранд каньон и толпится там</p>
       </section>
-      <section class="form-search">
+      <section class="search">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <span>Поиск гостиницы в Седоне</span>
+        <a class="button search-button" href="search.html">Поиск гостиницы в Седоне</a>
       </section>
       <section class="map">
         <h2 class="visually-hidden">Карта</h2>
+        <img src="img/map.png" width="1200" height="593" alt="Карта">
         <!--здесь будет карта-->
       </section>
     </main>
@@ -92,9 +93,41 @@
         <a class="footer-academy-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy"></a>
       </p>
     </footer>
-    <section class="modal modal-find">
-      <!-- Здесь будет форма -->
-      <span class="modal-find-button">Найти</span>
+    <section class="modal modal-search">
+      <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="search-form-item">
+          <label for="arrival-date">
+            Дата заезда:
+            <a class="arrival-date-calendar" href="#"><span class="calendar-icon"></span></a>
+          </label>
+          <input class="arrival-date" type="text" name="arrival-date" value="24 апреля 2017" id="arrival-date">
+        </p>
+
+        <p class="search-form-item">
+          <label for="departure-date">
+            Дата выезда:
+            <a class="departure-date-calendar" href="#"><span class="calendar-icon"></span></a>
+          </label>
+          <input class="departure-date" type="text" name="departure-date" value="4 июля 2017" id="departure-date">
+        </p>
+
+        <p class="search-form-item search-form-num">
+          <label for="count-of-adults">Взрослые:</label>
+          <button class="button button-num-minus" type="button">-</button>
+          <input class="count-of-adults" type="text" name="count-of-adults" value="2" id="count-of-adults">
+          <button class="button button-num-plus" type="button">+</button>
+        </p>
+
+        <p class="search-form-item search-form-num">
+          <label for="count-of-childrens">Дети:</label>
+          <button class="button button-num-minus" type="button">-</button>
+          <input class="count-of-childrens" type="text" name="count-of-childrens" value="0" id="count-of-childrens">
+          <button class="button button-num-plus" type="button">+</button>
+        </p>
+
+        <button class="button modal-search-button" type="submit">Найти</button>
+
+      </form>
     </section>
   </body>
 </html>
