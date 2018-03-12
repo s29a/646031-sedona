@@ -51,25 +51,25 @@
                   <label for="filter-motel">Мотель</label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Apartments" id="filter-Apartments" checked>
-                  <label for="filter-Apartments">Апартаменты</label>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" id="filter-apartments" checked>
+                  <label for="filter-apartments">Апартаменты</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="filter-group filter-cost">
               <legend>Стоимость в сутки (р):</legend>
-              <label for="filter-coast-min">
+              <label for="filter-cost-min">
                 От
-                <input class="coast-min" type="text" name="coast-min" value="0" id="filter-coast-min">
+                <input class="cost-min" type="text" name="cost-min" value="0" id="filter-cost-min">
               </label>
-              <label for="filter-coast-max">
+              <label for="filter-cost-max">
                 До
-                <input class="coast-max" type="text" name="coast-max" value="3000" id="filter-coast-max">
+                <input class="cost-max" type="text" name="cost-max" value="3000" id="filter-cost-max">
               </label>
-              <span class="coast-range">--*---*--</span>
+              <div class="cost-range"></div>
             </fieldset>
             <button class="button filter-button" type="submit">Показать</button>
-          </form>        
+          </form>
       </section>
       <section class="catalog-sort">
         <h2 class="visually-hidden">Сортировка результатов</h2>
@@ -94,7 +94,7 @@
           <img class="hotel-img" src="img/hotel-1.jpg" width="135" height="90" alt="Amara Resort & Spa">
           <p class="hotel-type">Гостиница</p>
           <a class="button button-hotel-detail" href="#">Подробнее</a>
-          <p class="hotel-coast">От 4000 Р.</p>
+          <p class="hotel-cost">От 4000 Р.</p>
           <a class="button button-hotel-booking" href="#">Забронировать</a>
           <div class="hotel-stars">
             <span class="hotel-star">*</span>
@@ -109,7 +109,7 @@
           <img class="hotel-img" src="img/hotel-2.jpg" width="135" height="90" alt="Desert Quail Inn">
           <p class="hotel-type">Мотель</p>
           <a class="button button-hotel-detail" href="#">Подробнее</a>
-          <p class="hotel-coast">От 3000 Р.</p>
+          <p class="hotel-cost">От 3000 Р.</p>
           <a class="button button-hotel-booking" href="#">Забронировать</a>
           <div class="hotel-stars">
             <span class="hotel-star">*</span>
@@ -123,7 +123,7 @@
           <img class="hotel-img" src="img/hotel-3.jpg" width="135" height="90" alt="Villas at Poco Diablo">
           <p class="hotel-type">Апартаменты</p>
           <a class="button button-hotel-detail" href="#">Подробнее</a>
-          <p class="hotel-coast">От 2000 Р.</p>
+          <p class="hotel-cost">От 2000 Р.</p>
           <a class="button button-hotel-booking" href="#">Забронировать</a>
           <div class="hotel-stars">
             <span class="hotel-star">*</span>
