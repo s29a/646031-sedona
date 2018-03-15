@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -22,13 +25,13 @@
       <section class="intro">
         <h1 class="visually-hidden">Седона</h1>
         <p class="intro-slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <p class="intro-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
       <section class="advantages advantages-photo">
         <h2>Настоящий городок</h2>
         <span>&#8212; №1 &#8212;</span>
         <p>Седона &#8212; не аттракцион для туристов, там течет своя жизнь</p>
-        <img src="img/index-city.jpg" width="800" height="256" alt="Седона">
+        <img src="img/index-city.jpg" width="800" height="400" alt="Седона">
       </section>
       <section class="features">
         <h2 class="visually-hidden">Преимущества</h2>
@@ -51,23 +54,25 @@
         <h2>Там есть Мост Дьявола</h2>
         <span>&#8212; №2 &#8212;</span>
         <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-        <img src="img/index-bridge.jpg" width="800" height="256" alt="Мост дьявола">
+        <img src="img/index-bridge.jpg" width="800" height="400" alt="Мост дьявола">
       </section>
-      <section class="advantages">
-        <h2>Небольшая площадь</h2>
-        <span>&#8212; №3 &#8212;</span>
-        <p>Все достопримечательности находятся очень близко</p>
-      </section>
-      <section class="advantages">
-        <h2>Красивая дорога</h2>
-        <span>&#8212; №4 &#8212;</span>
-        <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-      </section>
-      <section class="advantages">
-        <h2>Мало туристов</h2>
-        <span>&#8212; №5 &#8212;</span>
-        <p>Большинство едет в гранд каньон и толпится там</p>
-      </section>
+      <div class="advantages-columns">
+        <section class="advantages">
+          <h2>Небольшая площадь</h2>
+          <span>&#8212; №3 &#8212;</span>
+          <p>Все достопримечательности находятся очень близко</p>
+        </section>
+        <section class="advantages">
+          <h2>Красивая дорога</h2>
+          <span>&#8212; №4 &#8212;</span>
+          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </section>
+        <section class="advantages">
+          <h2>Мало туристов</h2>
+          <span>&#8212; №5 &#8212;</span>
+          <p>Большинство едет в гранд каньон и толпится там</p>
+        </section>
+      </div>
       <section class="search">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
