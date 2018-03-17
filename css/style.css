@@ -11,6 +11,13 @@ body {
   background-color: #ffffff;
 }
 
+*{
+    outline: 1px dashed #81b3d2;
+}
+*:hover{
+    outline: 2px dashed #008090;
+}
+
 a {
   text-decoration: none;
 }
@@ -38,7 +45,33 @@ a {
   background-color: #5496bd;
 }
 
+.container {
+  /*------------------*/
+  min-width: 768px;
+  max-width: 1200px;
+  /*------------------*/
+
+  margin: 0 auto;
+}
+
+.main-header {
+  position: relative;
+}
+
+.main-header-logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 140px;
+}
+
 .main-navigation {
+  /*--------------*/
+  padding: 0 6%;
+  /*--------------*/
+
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
@@ -46,7 +79,29 @@ a {
 }
 
 .site-navigation {
+  display: flex;
+  padding: 0;
+  margin: 0;
+
   list-style: none;
+}
+
+.site-navigation li {
+  flex-basis: 20%;
+}
+
+.site-navigation li:nth-child(1),
+.site-navigation li:nth-child(2) {
+  text-align: left;
+}
+
+.site-navigation li:nth-child(2) {
+  margin-right: auto;
+}
+
+.site-navigation  li:nth-child(3),
+.site-navigation  li:nth-child(4) {
+  text-align: right;
 }
 
 .site-navigation a {
@@ -88,6 +143,10 @@ a {
 
 .advantages h2,
 .features h2 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  
   font-size: 21px;
   line-height: 21px;
   font-weight: bold;
@@ -95,21 +154,77 @@ a {
 }
 
 .feature-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+
   list-style: none;
 }
 
 .advantages-columns {
+  display: flex;
+
   background-color: #eeeeee;
+}
+
+.feature-item,
+.advantages-photo .advantages-text,
+.advantages-columns .advantages {
+  flex-basis: 33.33%;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.advantages-photo {
+  display: flex;
+
+  color: #ffffff;
+
+  background-color: #81b3d2;
 }
 
 .advantages-photo h2 {
   color: #ffffff;
 }
 
-.advantages-photo {
-  color: #ffffff;
+.advantages-text{
+  padding-top: 50px;
+  padding-bottom: 40px;
+  padding-left: 45px;
+  padding-right: 45px;
+  text-align: center;
+}
 
-  background-color: #81b3d2;
+.advantages-text p{
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.advantages-img {
+  flex-basis: 66.67%;
+  flex-grow: 2;
+  flex-shrink: 2;
+  position: relative;
+  min-width: 511px;
+  max-height: 256px;
+
+  overflow-y: hidden;
+}
+
+.advantages-photo .right-img {
+  order: -1;
+}
+
+.advantages-img img{
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  height: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .search h2 {
