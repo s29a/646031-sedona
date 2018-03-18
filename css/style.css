@@ -143,14 +143,24 @@ a {
 }
 
 .intro-slogan {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   color: #000000;
+  text-align: center;
 }
 
 .intro-text {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+
   line-height: 26px;
+  text-align: center;
 }
 
 .advantages h2,
@@ -175,6 +185,7 @@ a {
 
 .advantages-columns {
   display: flex;
+  margin-bottom: 50px;
 
   background-color: #eeeeee;
 }
@@ -184,15 +195,18 @@ a {
 }
 
 .feature-item,
-.advantages-photo .advantages-text,
-.advantages-columns .advantages {
-  flex-basis: 33.33%;
+
+.advantages {
+  flex-basis: 33%;
   flex-grow: 1;
   flex-shrink: 1;
+
+  min-width: 256px;
 }
 
 .advantages-photo {
   display: flex;
+
 
   color: #ffffff;
 
@@ -217,10 +231,13 @@ a {
 }
 
 .advantages-img {
-  flex-basis: 66.67%;
+  flex-basis: 67%;
   flex-grow: 2;
   flex-shrink: 2;
+
   position: relative;
+  max-width: 800px;
+
   min-width: 511px;
 
   overflow-y: hidden;
@@ -239,6 +256,18 @@ a {
   top: 0;
   bottom: 0;
   right: 0;
+}
+
+.search h2,
+.search p {
+  padding: 0;
+  margin: 0;
+
+  text-align: center;
+}
+
+.search p {
+  margin-bottom: 50px;
 }
 
 .map {
