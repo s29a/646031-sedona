@@ -8,15 +8,17 @@ body {
   color: #333333;
   text-transform: uppercase;
 
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 
+/*----------------------------------*/
 *{
     outline: 1px dashed #81b3d2;
 }
 *:hover{
     outline: 2px dashed #008090;
 }
+/*----------------------------------*/
 
 a {
   text-decoration: none;
@@ -45,13 +47,23 @@ a {
   background-color: #5496bd;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .container {
   /*------------------*/
   min-width: 768px;
   max-width: 1200px;
   /*------------------*/
-
   margin: 0 auto;
+
+  box-shadow: 0px 0px 15px 5px rgba(0, 1, 1, 0.2);
+  background-color: #ffffff;
 }
 
 .main-header {
@@ -69,7 +81,7 @@ a {
 
 .main-navigation {
   /*--------------*/
-  padding: 0 6%;
+  padding: 15px 6%;
   /*--------------*/
 
   font-size: 14px;
