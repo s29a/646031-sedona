@@ -12,12 +12,7 @@ body {
 }
 
 /*----------------------------------*/
-*{
-    outline: 1px dashed #81b3d2;
-}
-*:hover{
-    outline: 2px dashed #008090;
-}
+
 /*----------------------------------*/
 
 a {
@@ -164,7 +159,7 @@ a {
 }
 
 .advantages h2,
-.features h2 {
+.features h3 {
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
@@ -190,17 +185,13 @@ a {
   background-color: #eeeeee;
 }
 
-.advantages {
-  min-height: 256px;
-}
-
 .feature-item,
-
 .advantages {
   flex-basis: 33%;
   flex-grow: 1;
   flex-shrink: 1;
 
+  min-height: 256px;
   min-width: 256px;
 }
 
@@ -218,7 +209,7 @@ a {
 }
 
 .advantages-text {
-  padding: 50px 45px;
+  padding: 50px 40px;
   padding-bottom: 40px;
 
   text-align: center;
@@ -237,8 +228,6 @@ a {
 
   position: relative;
   max-width: 800px;
-
-  min-width: 511px;
 
   overflow-y: hidden;
 }
@@ -495,6 +484,12 @@ a {
   color: #000000;
 
   background-color: #ffffff;
+}
+
+.main-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .footer-hashtag {
