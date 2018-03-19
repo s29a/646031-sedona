@@ -130,6 +130,19 @@ a {
   color: #766357;
 }
 
+.welcome {
+  background-image: url("../img/index-intro.jpg");
+  background-position: center;
+  background-size: 100% auto;
+  height: 500px;
+}
+
+.welcome-bottom {
+  background-image: url("../img/index-intro-bottom.png");
+  background-size: 100% auto;
+  height: 57px;
+}
+
 .intro-slogan {
   padding: 0;
   margin: 0;
@@ -199,7 +212,7 @@ a {
   max-width: 66.67%;
   position: relative;
 
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .advantages-photo {
@@ -223,16 +236,14 @@ a {
   margin: auto;
   width: 100%;
   height: auto;
-  left: 0;
   top: 0;
   bottom: 0;
-  right: 0;
 }
 
 .search {
   padding: 50px;
   padding-bottom: 0;
-  
+
   text-align: center;
 }
 
