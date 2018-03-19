@@ -173,19 +173,33 @@ a {
 
 .advantages-columns {
   display: flex;
-  margin-bottom: 50px;
 
   background-color: #eeeeee;
 }
 
-.feature-item,
-.advantages {
-  flex-basis: 33%;
-  flex-grow: 1;
-  flex-shrink: 1;
+.advantages,
+.feature-item {
+  flex-basis: 33.33%;
+  max-width: 33.33%;
 
-  min-height: 256px;
-  min-width: 256px;
+  padding: 45px 30px;
+  box-sizing: border-box;
+
+  text-align: center;
+}
+
+.advantages p {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.advantages-img {
+  flex-basis: 66.67%;
+  max-width: 66.67%;
+  position: relative;
+
+  overflow-y: hidden;
 }
 
 .advantages-photo {
@@ -198,30 +212,6 @@ a {
 
 .advantages-photo h2 {
   color: #ffffff;
-}
-
-.advantages-text,
-.features-text {
-  padding: 45px 30px;
-  padding-bottom: 40px;
-
-  text-align: center;
-}
-
-.advantages-text p {
-  margin: 0;
-  padding: 0;
-  margin-top: 20px;
-}
-
-.advantages-img {
-  flex-basis: 67%;
-  flex-grow: 2;
-  flex-shrink: 2;
-  position: relative;
-  max-width: 800px;
-
-  overflow-y: hidden;
 }
 
 .advantages-photo .right-img {
@@ -239,6 +229,11 @@ a {
   right: 0;
 }
 
+.search {
+  padding: 50px;
+  padding-bottom: 0;
+}
+
 .search h2,
 .search p {
   padding: 0;
@@ -253,7 +248,9 @@ a {
 
 .map {
   position: relative;
+  /*----------------------------------*/
   min-height: 470px;
+  /*----------------------------------*/
 
   overflow-y: hidden;
 }
@@ -488,9 +485,38 @@ a {
   background-color: #503e33;
 }
 
-.hotel-type,
+.hotel {
+  display: flex;
+  padding: 30px 0;
+}
+
+.hotel-img {
+  align-self: center;
+  order: -1;
+  margin-right: 30px;
+}
+
+/*----------------------------------*/
+.hotel-name {
+  margin: 0;
+  padding: 0;
+}
+
+.hotel-type {
+  color: #333333;
+}
+
 .hotel-cost {
   color: #333333;
+}
+/*----------------------------------*/
+
+.hotel-rate-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-left: auto;
 }
 
 .hotel-rate {
@@ -512,10 +538,11 @@ a {
 .main-footer {
   display: flex;
   align-items: center;
-  justify-content: space-around;
 }
 
 .footer-hashtag {
+  flex-basis: 33.33%;
+  max-width: 33.33%;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -525,6 +552,24 @@ a {
 }
 
 .footer-social {
+  flex-basis: 33.33%;
+  max-width: 33.33%;
+
+  text-align: center;
+}
+
+.footer-social ul {
+  display: flex;
+  align-items: center;
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 33.33%;
+  max-width: 33.33%;
+
   text-align: center;
 }
 
@@ -534,10 +579,6 @@ a {
 
 .social-button {
   color: #000000;
-}
-
-.footer-copyright {
-  text-align: center;
 }
 
 .modal-search p {
