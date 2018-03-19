@@ -66,6 +66,7 @@ a {
   left: 0;
   margin: 0 auto;
   width: 140px;
+  z-index: 1;
 }
 
 .main-navigation {
@@ -271,7 +272,6 @@ a {
 }
 
 .map {
-  position: relative;
   /*----------------------------------*/
   min-height: 470px;
   /*----------------------------------*/
@@ -280,14 +280,9 @@ a {
 }
 
 .map img {
-  position: absolute;
   margin: auto;
   width: 100%;
   height: auto;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
 }
 
 .search h2 {
