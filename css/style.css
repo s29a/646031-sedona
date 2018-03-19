@@ -10,7 +10,7 @@ body {
 
   background-color: #f2f2f2;
 }
- 
+
 a {
   text-decoration: none;
 }
@@ -232,14 +232,14 @@ a {
 .search {
   padding: 50px;
   padding-bottom: 0;
+  
+  text-align: center;
 }
 
 .search h2,
 .search p {
   padding: 0;
   margin: 0;
-
-  text-align: center;
 }
 
 .search p {
