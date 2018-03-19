@@ -131,16 +131,23 @@ a {
 }
 
 .welcome {
+  position: relative;
   background-image: url("../img/index-intro.jpg");
   background-position: center;
   background-size: 100% auto;
-  height: 500px;
+  height: 512px;
+
+  overflow: hidden;
 }
 
 .welcome-bottom {
-  background-image: url("../img/index-intro-bottom.png");
-  background-size: 100% auto;
-  height: 57px;
+  position: absolute;
+  bottom: -6px;
+}
+
+.welcome-bottom img{
+  width: 100%;
+  height: auto;
 }
 
 .intro-slogan {
@@ -210,8 +217,11 @@ a {
 .advantages-img {
   flex-basis: 66.67%;
   max-width: 66.67%;
-  position: relative;
 
+  /* for adaptive
+  position: relative;
+  */
+  height: 256px;
   overflow: hidden;
 }
 
@@ -232,12 +242,15 @@ a {
 }
 
 .advantages-img img{
-  position: absolute;
-  margin: auto;
   width: 100%;
   height: auto;
+
+  /* for adaptive
+  position: absolute;
   top: 0;
   bottom: 0;
+  */
+
 }
 
 .search {
