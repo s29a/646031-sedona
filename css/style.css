@@ -218,7 +218,6 @@ a {
   flex-basis: 67%;
   flex-grow: 2;
   flex-shrink: 2;
-
   position: relative;
   max-width: 800px;
 
@@ -293,6 +292,7 @@ a {
 
 .search-button:active {
   color: rgba(255, 255, 255, 0.3);
+
   background-color: #503e33;
 }
 
@@ -325,8 +325,11 @@ a {
 }
 
 .filter input[type="text"] {
-  background-color: transparent;
+  font: inherit;
+  color: #ffffff;
+  text-align: center;
 
+  background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
 }
@@ -349,7 +352,9 @@ a {
 
 .catalog-sort {
   display: flex;
-  padding: 10px 6%;
+  justify-content: space-between;
+  padding-left: 6%;
+  padding-right: 6%;
 
   border-bottom: 1px solid #e5e5e5;
 }
@@ -406,13 +411,6 @@ a {
   opacity: 1;
 }
 
-.sort-item-active a {
-  text-decoration: none;
-  color: #81b3d2;
-
-  opacity: 1;
-}
-
 .sort-item-active a:hover,
 .sort-item-active a:focus,
 .sort-item-active a:active {
@@ -448,6 +446,11 @@ a {
 .sort-page-active a:focus,
 .sort-page-active a:active {
   color: #81b3d2;
+}
+
+.search-result {
+  padding-left: 6%;
+  padding-right: 6%;
 }
 
 .hotel {
