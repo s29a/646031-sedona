@@ -10,7 +10,7 @@ body {
 
   background-color: #f2f2f2;
 }
-
+ 
 a {
   text-decoration: none;
 }
@@ -496,21 +496,28 @@ a {
   margin-right: 30px;
 }
 
-/*----------------------------------*/
+.hotel-columns{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.hotel-column {
+  margin-right: 6px;
+}
+
 .hotel-name {
   margin: 0;
   padding: 0;
+  flex-basis: 100%;
 }
 
-.hotel-type {
-  color: #333333;
-}
-
+.hotel-type,
 .hotel-cost {
+  margin: 0;
+  padding: 0;
   color: #333333;
 }
-/*----------------------------------*/
-
 .hotel-rate-column {
   display: flex;
   flex-direction: column;
