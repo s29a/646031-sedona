@@ -327,7 +327,7 @@ a {
 .search-form p {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   flex-grow: 1;
   position: relative;
   margin-bottom: 29px;
@@ -335,32 +335,35 @@ a {
   font-weight: bold;
 }
 
-.search-form-num:last-of-type label{
-  margin-left: 50px;
-}
-
-.search-form-num:first-of-type label{
-  margin-right: 50px;
-}
-
 .count-of-childrens,
-.count-of-adults{
+.count-of-adults {
   width: 38px;
-  padding: 5px 40px;
+  height: 38px;
+  padding: 0;
 
   text-align: center;
+}
+
+.search-form-num label:first-of-type {
+  margin-right: 40px;
+}
+
+.search-form-num label:last-of-type {
+  margin-right: 30px;
+  margin-left:  50px;
 }
 
 .search-form input[type="text"] {
   font: inherit;
   text-transform: uppercase;
+  border: none;
 
   background-color: #ebebeb;
-  border: 2px solid #ebebeb;
 }
 
 .search-form input[type="text"]:focus {
   background-color: #ffffff;
+  outline: 2px solid #ebebeb;
 }
 /*----------------------------------*/
 .departure-date-calendar,
@@ -370,16 +373,10 @@ a {
 }
 /*----------------------------------*/
 
-.button-num {
-  position: relative;
-}
-
 .button-num-minus {
-  position: absolute;
-  left: 0;
-  top: 0;
   height: 38px;
   width: 38px;
+  padding: 0;
   box-sizing: border-box;
 
   color: #a9a9a9;
@@ -389,11 +386,9 @@ a {
 }
 
 .button-num-plus {
-  position: absolute;
-  right: 0;
-  top: 0;
   height: 38px;
   width: 38px;
+  padding: 0;
   box-sizing: border-box;
 
   color: #a9a9a9;
