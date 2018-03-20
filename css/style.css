@@ -216,12 +216,12 @@ a {
 }
 
 .advantages-img {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   flex-basis: 66.67%;
   max-width: 66.67%;
 
-  /* for adaptive
-  position: relative;
-  */
   height: 256px;
   overflow: hidden;
 }
@@ -245,13 +245,6 @@ a {
 .advantages-img img{
   width: 100%;
   height: auto;
-
-  /* for adaptive
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  */
-
 }
 
 .search {
