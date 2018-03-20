@@ -715,13 +715,59 @@ a {
   flex-basis: 33.33%;
   max-width: 33.33%;
 
-  text-align: center;
+  color: #000000;
+}
+
+.footer-copyright:hover path,
+.footer-copyright:focus path {
+  fill: #81b3d2;
+}
+
+.footer-copyright:active path {
+  fill: #bdbbbc;
+}
+
+.footer-copyright-by {
+  margin-right: 10px;
+
+  font-weight: normal;
 }
 
 .footer-social ul {
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+
   list-style: none;
 }
 
+.footer-social ul:last-child {
+  margin-right: 0;
+}
+
 .social-button {
-  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
+  margin: 0 3px;
+
+  background-color: #81b3d2;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #669ec0;
+}
+
+.social-button:active {
+  background-color: #5496bd;
+}
+
+.social-button:active path {
+  fill: #88b6d1;
 }
