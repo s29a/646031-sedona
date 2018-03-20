@@ -15,7 +15,17 @@ a {
   text-decoration: none;
 }
 
+*{
+     outline: 1px dashed #81b3d2;
+ }
+ *:hover{
+     outline: 2px dashed #008090;
+ }
+
 .button {
+  display: inline-block;
+  padding: 3px 16px;
+
   font: inherit;
   font-weight: bold;
 
@@ -248,20 +258,168 @@ a {
 }
 
 .search {
+  position: relative;
   padding: 50px;
   padding-bottom: 0;
 
   text-align: center;
 }
 
-.search h2,
+.search h2 {
+  margin: 0;
+
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+  color: #000000;
+}
 .search p {
   padding: 0;
   margin: 0;
+  margin-bottom: 50px;
+
+  line-height: 24px;
 }
 
-.search p {
-  margin-bottom: 50px;
+.search-button {
+  padding: 30px 139px;
+  font-size: 21px;
+  background-color: #766357;
+}
+
+.search-button:hover,
+.search-button:focus {
+  background-color: #604e43;
+}
+
+.search-button:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #503e33;
+}
+
+.search-form {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  width: 458px;
+  padding: 55px;
+  margin: 0 auto;
+  left:0;
+  right:0;
+
+  background-color: #ffffff;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+
+  text-align: left;
+}
+
+.departure-date,
+.arrival-date {
+  width: 346px;
+  box-sizing: border-box;
+
+  padding: 5px;
+  padding-left: 12px;
+  padding-right: 40px;
+}
+
+.search-form p {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-grow: 1;
+  position: relative;
+  margin-bottom: 29px;
+
+  font-weight: bold;
+}
+
+.search-form-num:last-of-type label{
+  margin-left: 50px;
+}
+
+.search-form-num:first-of-type label{
+  margin-right: 50px;
+}
+
+.count-of-childrens,
+.count-of-adults{
+  width: 38px;
+  padding: 5px 40px;
+
+  text-align: center;
+}
+
+.search-form input[type="text"] {
+  font: inherit;
+  text-transform: uppercase;
+
+  background-color: #ebebeb;
+  border: 2px solid #ebebeb;
+}
+
+.search-form input[type="text"]:focus {
+  background-color: #ffffff;
+}
+/*----------------------------------*/
+.departure-date-calendar,
+.arrival-date-calendar {
+  position: absolute;
+  right: 0;
+}
+/*----------------------------------*/
+
+.button-num {
+  position: relative;
+}
+
+.button-num-minus {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 38px;
+  width: 38px;
+  box-sizing: border-box;
+
+  color: #a9a9a9;
+  font-size: 24px;
+
+  background-color: #ebebeb;
+}
+
+.button-num-plus {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 38px;
+  width: 38px;
+  box-sizing: border-box;
+
+  color: #a9a9a9;
+  font-size: 24px;
+
+  background-color: #ebebeb;
+}
+
+.button-num-minus:hover,
+.button-num-minus:focus,
+.button-num-plus:hover,
+.button-num-plus:focus {
+  color: #000000;
+
+  background-color: #ebebeb;
+}
+
+.button-num-plus:active,
+.button-num-minus:active {
+  color: #81b3d2;
+}
+
+.modal-search-button {
+  width: 100%;
+  padding: 16px;
+  font-size: 21px;
 }
 
 .map {
@@ -276,33 +434,6 @@ a {
   margin: auto;
   width: 100%;
   height: auto;
-}
-
-.search h2 {
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: bold;
-  color: #000000;
-}
-
-.search p {
-  line-height: 24px;
-}
-
-.search-button {
-  font-size: 21px;
-  background-color: #766357;
-}
-
-.search-button:hover,
-.search-button:focus {
-  background-color: #604e43;
-}
-
-.search-button:active {
-  color: rgba(255, 255, 255, 0.3);
-
-  background-color: #503e33;
 }
 
 .filter {
@@ -598,45 +729,4 @@ a {
 
 .social-button {
   color: #000000;
-}
-
-.modal-search p {
-  font-weight: bold;
-}
-
-.modal-search input[type="text"] {
-  font: inherit;
-  text-transform: uppercase;
-
-  background-color: #ebebeb;
-  border: 2px solid #ebebeb;
-}
-
-.modal-search input[type="text"]:focus {
-  background-color: #ffffff;
-}
-
-.button-num-minus,
-.button-num-plus {
-  color: #a9a9a9;
-
-  background-color: #ebebeb;
-}
-
-.button-num-minus:hover,
-.button-num-minus:focus,
-.button-num-plus:hover,
-.button-num-plus:focus {
-  color: #000000;
-
-  background-color: #ebebeb;
-}
-
-.button-num-plus:active,
-.button-num-minus:active {
-  color: #81b3d2;
-}
-
-.modal-search-button {
-  font-size: 21px;
 }

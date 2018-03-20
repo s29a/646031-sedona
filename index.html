@@ -101,6 +101,39 @@
           <p>Укажите предполагаемые даты поездки,
             <br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <a class="button search-button" href="search.html">Поиск гостиницы в Седоне</a>
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="search-form-item">
+              <label for="arrival-date">
+                Дата заезда:
+                <button class="arrival-date-calendar" type="button"><span class="calendar-icon"></span></button>
+              </label>
+              <input class="arrival-date" type="text" name="arrival-date" value="24 апреля 2017" id="arrival-date">
+            </p>
+            <p class="search-form-item">
+              <label for="departure-date">
+                Дата выезда:
+                <button class="departure-date-calendar" type="button"><span class="calendar-icon"></span></button>
+              </label>
+              <input class="departure-date" type="text" name="departure-date" value="4 июля 2017" id="departure-date">
+            </p>
+            <p class="search-form-item search-form-num">
+              <label for="count-of-adults">Взрослые:</label>
+              <span class="button-num">
+                <button class="button button-num-minus" type="button">-</button>
+                <input class="count-of-adults" type="text" name="count-of-adults" value="2" id="count-of-adults">
+                <button class="button button-num-plus" type="button">+</button>
+              </span>
+            </p>
+            <p class="search-form-item search-form-num">
+              <label for="count-of-childrens">Дети:</label>
+              <span class="button-num">
+                <button class="button button-num-minus" type="button">-</button>
+                <input class="count-of-childrens" type="text" name="count-of-childrens" value="0" id="count-of-childrens">
+                <button class="button button-num-plus" type="button">+</button>
+              </span>
+            </p>
+            <button class="button modal-search-button" type="submit">Найти</button>
+          </form>
         </section>
         <section class="map">
           <h2 class="visually-hidden">Карта</h2>
@@ -122,36 +155,5 @@
         </p>
       </footer>
     </div>
-    <section class="modal modal-search">
-      <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="search-form-item">
-          <label for="arrival-date">
-            Дата заезда:
-            <button class="arrival-date-calendar" type="button"><span class="calendar-icon"></span></button>
-          </label>
-          <input class="arrival-date" type="text" name="arrival-date" value="24 апреля 2017" id="arrival-date">
-        </p>
-        <p class="search-form-item">
-          <label for="departure-date">
-            Дата выезда:
-            <button class="departure-date-calendar" type="button"><span class="calendar-icon"></span></button>
-          </label>
-          <input class="departure-date" type="text" name="departure-date" value="4 июля 2017" id="departure-date">
-        </p>
-        <p class="search-form-item search-form-num">
-          <label for="count-of-adults">Взрослые:</label>
-          <button class="button button-num-minus" type="button">-</button>
-          <input class="count-of-adults" type="text" name="count-of-adults" value="2" id="count-of-adults">
-          <button class="button button-num-plus" type="button">+</button>
-        </p>
-        <p class="search-form-item search-form-num">
-          <label for="count-of-childrens">Дети:</label>
-          <button class="button button-num-minus" type="button">-</button>
-          <input class="count-of-childrens" type="text" name="count-of-childrens" value="0" id="count-of-childrens">
-          <button class="button button-num-plus" type="button">+</button>
-        </p>
-        <button class="button modal-search-button" type="submit">Найти</button>
-      </form>
-    </section>
   </body>
 </html>
