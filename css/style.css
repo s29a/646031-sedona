@@ -28,9 +28,8 @@ a {
 
   font: inherit;
   font-weight: bold;
-
-  text-align: center;
   color: #ffffff;
+  text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
 
@@ -45,6 +44,7 @@ a {
 
 .button:active {
   color: rgba(255, 255, 255, 0.3);
+
   background-color: #5496bd;
 }
 
@@ -61,8 +61,8 @@ a {
   max-width: 1200px;
   margin: 0 auto;
 
-  box-shadow: 0px 0px 15px 5px rgba(0, 1, 1, 0.2);
   background-color: #ffffff;
+  box-shadow: 0px 0px 15px 5px rgba(0, 1, 1, 0.2);
 }
 
 .main-header {
@@ -76,7 +76,6 @@ a {
   left: 0;
   margin: 0 auto;
   width: 140px;
-  z-index: 1;
 }
 
 .main-navigation {
@@ -146,33 +145,31 @@ a {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  min-height: 512px;
+  margin-bottom: 60px;
+
   background-image: url("../img/index-intro.jpg");
   background-repeat: no-repeat;
   background-position: 50% -56px;
-  
-  height: 512px;
-  margin-bottom: 60px;
-
-  overflow: hidden;
 }
 
 .welcome-text {
-  background-image: url("../img/index-welcome.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
   width: 458px;
   height: 352px;
   margin-top: 76px;
+
+  background-image: url("../img/index-welcome.png");
+  background-repeat: no-repeat;
 }
 
 .welcome-bottom {
-  background-image: url("../img/index-intro-bottom.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
   width: 100%;
   height: 57px;
+
+  background-image: url("../img/index-intro-bottom.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
 }
 
 .intro-slogan {
@@ -198,8 +195,8 @@ a {
 
 .advantages h2,
 .features h3 {
-  margin: 0;
   padding: 0;
+  margin: 0;
   margin-bottom: 20px;
 
   font-size: 21px;
@@ -249,6 +246,7 @@ a {
   width: 75px;
   height: 72px;
   margin: 0 auto 30px;
+
   background-image: url("../img/icon-1.svg");
 }
 
@@ -258,6 +256,7 @@ a {
   width: 74px;
   height: 70px;
   margin: 0 auto 30px;
+
   background-image: url("../img/icon-3.svg");
 }
 
@@ -267,12 +266,13 @@ a {
   width: 64px;
   height: 76px;
   margin: 0 auto 30px;
+
   background-image: url("../img/icon-2.svg");
 }
 
 .advantages p {
-  margin: 0;
   padding: 0;
+  margin: 0;
   margin-top: 20px;
 }
 
@@ -282,8 +282,8 @@ a {
   flex-direction: column;
   flex-basis: 66.666666%;
   max-width: 66.666666%;
-
   height: 256px;
+
   overflow: hidden;
 }
 
@@ -334,7 +334,9 @@ a {
 
 .search-button {
   padding: 30px 139px;
+
   font-size: 21px;
+
   background-color: #766357;
 }
 
@@ -351,13 +353,13 @@ a {
 
 .search-form {
   position: absolute;
+  left:0;
+  right:0;
   display: flex;
   flex-wrap: wrap;
   width: 458px;
   padding: 55px;
   margin: 0 auto;
-  left:0;
-  right:0;
 
   background-color: #ffffff;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
@@ -368,19 +370,18 @@ a {
 .departure-date,
 .arrival-date {
   width: 346px;
-  box-sizing: border-box;
-
   padding: 5px;
   padding-left: 12px;
   padding-right: 40px;
+  box-sizing: border-box;
 }
 
 .search-form p {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-grow: 1;
-  position: relative;
   margin-bottom: 29px;
 
   font-weight: bold;
@@ -407,9 +408,9 @@ a {
 .search-form input[type="text"] {
   font: inherit;
   text-transform: uppercase;
-  border: none;
 
   background-color: #ebebeb;
+  border: none;
 }
 
 .search-form input[type="text"]:focus {
@@ -430,8 +431,8 @@ a {
   padding: 0;
   box-sizing: border-box;
 
-  color: #a9a9a9;
   font-size: 24px;
+  color: #a9a9a9;
 
   background-color: #ebebeb;
 }
@@ -442,8 +443,8 @@ a {
   padding: 0;
   box-sizing: border-box;
 
-  color: #a9a9a9;
   font-size: 24px;
+  color: #a9a9a9;
 
   background-color: #ebebeb;
 }
@@ -465,6 +466,7 @@ a {
 .modal-search-button {
   width: 100%;
   padding: 16px;
+
   font-size: 21px;
 }
 
@@ -641,6 +643,7 @@ a {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+
   color: #000000;
 }
 
@@ -699,6 +702,7 @@ a {
 .hotel-cost {
   margin: 0;
   padding: 0;
+
   color: #333333;
 }
 .hotel-rate-column {
@@ -734,11 +738,11 @@ a {
 .footer-hashtag {
   flex-basis: 33.33%;
   max-width: 33.33%;
+
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   color: #000000;
-
   text-align: center;
 }
 
@@ -753,8 +757,8 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 auto;
   padding: 0;
+  margin: 0 auto;
 
   list-style: none;
 }
@@ -763,8 +767,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 46px;
   height: 48px;
+  width: 46px;
   margin: 0 3px;
 
   background-color: #81b3d2;
