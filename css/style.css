@@ -16,8 +16,6 @@ a {
   text-decoration: none;
 }
 
-
-
 .button {
   display: inline-block;
 
@@ -682,8 +680,6 @@ a {
   text-align: center;
 }
 
-
-
 .cost-controls input {
   width: 30px;
 
@@ -1076,7 +1072,6 @@ a {
 .social-button:active path {
   fill: #88b6d1;
 }
-
 
 .footer-copyright {
   display: flex;
