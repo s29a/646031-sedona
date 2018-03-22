@@ -526,6 +526,7 @@ a {
 
 .filter-columns {
   display: flex;
+  justify-content: space-between;
   padding: 30px 6% 0px;
 }
 
@@ -543,7 +544,7 @@ a {
 
 .filter-option label {
   position: relative;
-  display:block;
+  display: block;
 
   cursor: pointer;
   user-select: none;
@@ -578,16 +579,15 @@ a {
 }
 
 .filter-cost {
-  width: 330px;
-  margin-left: auto;
+  width: 33.333333%;
 }
 
 .cost-controls {
   position: relative;
   height: 36px;
+  width: 87%;
   margin-bottom: 20px;
 
-  font-size: 0;
 
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -616,14 +616,17 @@ a {
   cursor: pointer;
 }
 
+.cost-controls-column {
+  width: 49%;
+}
+
 .cost-controls .cost-min,
 .cost-controls .cost-max {
-  width: 90px;
-  padding-left: 65px;
+
 }
 
 .cost-controls input {
-  width: 50px;
+  width: 50%;
   margin: 0;
 
   color: inherit;
