@@ -530,6 +530,16 @@ a {
   padding: 30px 6% 0px;
 }
 
+.filter-column:first-child {
+  width: 180px;
+  margin-right: 60px;
+}
+
+.filter-column:last-child {
+  width: 33.333333%;
+  margin-left: auto;
+}
+
 .filter-group {
   padding: 0;
   margin: 0;
@@ -579,13 +589,17 @@ a {
 }
 
 .filter-cost {
-  width: 33.333333%;
+  width: 87%;
+  margin-left: auto;
+}
+
+.filter-cost legend {
+  margin-bottom: 10px;
 }
 
 .cost-controls {
   position: relative;
   height: 36px;
-  width: 87%;
   margin-bottom: 20px;
 
 
@@ -640,7 +654,6 @@ a {
 
 .cost-range {
   position: relative;
-  width: 87%;
 
   margin-bottom: 32px;
 }
