@@ -152,7 +152,7 @@ a {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  min-height: 512px;
+  min-height: 510px;
   margin-bottom: 60px;
 
   background-image: url("../img/index-intro.jpg");
@@ -204,7 +204,7 @@ a {
 .features h3 {
   padding: 0;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 
   font-size: 21px;
   line-height: 21px;
@@ -241,7 +241,7 @@ a {
   flex-basis: 33.333333%;
   max-width: 33.333333%;
   min-height: 330px;
-  padding: 50px 45px;
+  padding: 55px 45px;
   box-sizing: border-box;
 
   text-align: center;
@@ -329,17 +329,17 @@ a {
 
 .search h2 {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 
   font-size: 30px;
   line-height: 36px;
   font-weight: bold;
   color: #000000;
 }
-.search p {
+.search-intro {
   padding: 0;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 
   line-height: 24px;
 }
@@ -348,6 +348,7 @@ a {
   padding: 30px 139px;
 
   font-size: 21px;
+  line-height: 26px;
 
   background-color: #766357;
 }
@@ -413,15 +414,22 @@ a {
   fill: #81b3d2;
 }
 
-.search-form p {
+.search-form-item {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-grow: 1;
-  margin-bottom: 29px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 32px;
 
+  line-height: 26px;
   font-weight: bold;
+}
+
+.search-form .search-form-num {
+  margin-bottom: 55px;
 }
 
 .count-of-childrens,
@@ -498,6 +506,7 @@ a {
   padding: 16px;
 
   font-size: 21px;
+  line-height: 26px;
 }
 
 .map {
