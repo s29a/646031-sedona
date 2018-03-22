@@ -609,15 +609,16 @@ a {
 .cost-controls label {
   display: inline-block;
 
-  font-size: 14px;
-  line-height: 38px;
-  vertical-align: top;
-
   cursor: pointer;
 }
 
 .cost-controls-column {
+  display: inline-block;
   width: 49%;
+  margin: 0 auto;
+
+  line-height: 38px;
+  text-align: center;
 }
 
 .cost-controls .cost-min,
@@ -626,18 +627,20 @@ a {
 }
 
 .cost-controls input {
-  width: 50%;
-  margin: 0;
+  width: 30px;
 
   color: inherit;
   font: inherit;
+  text-align: center;
 
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 .cost-range {
   position: relative;
+  width: 87%;
 
   margin-bottom: 32px;
 }
