@@ -392,8 +392,8 @@ a {
 .departure-date-calendar,
 .arrival-date-calendar {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 3px;
+  top: 3px;
   height: 34px;
   width: 34px;
   box-sizing: border-box;
