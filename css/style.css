@@ -244,6 +244,7 @@ a {
 
   box-sizing: border-box;
   max-width: 33.333333%;
+  min-height: 256px;
   padding: 45px 30px;
 
   text-align: center;
