@@ -158,7 +158,6 @@ a {
   justify-content: space-between;
   align-items: center;
 
-  min-height: 510px;
   margin-bottom: 60px;
 
   background-image: url("../img/index-intro.jpg");
@@ -170,6 +169,7 @@ a {
   width: 458px;
   height: 352px;
   margin-top: 76px;
+  margin-bottom: 20px;
 
   background-image: url("../img/index-welcome.png");
   background-repeat: no-repeat;
@@ -244,7 +244,6 @@ a {
 
   box-sizing: border-box;
   max-width: 33.333333%;
-  min-height: 256px;
   padding: 45px 30px;
 
   text-align: center;
@@ -255,7 +254,6 @@ a {
 
   box-sizing: border-box;
   max-width: 33.333333%;
-  min-height: 330px;
   padding: 55px 45px;
 
   text-align: center;
@@ -412,8 +410,8 @@ a {
 
 .button-calendar {
   position: absolute;
-  top: 3px;
-  right: 3px;
+  top: 1px;
+  right: 2px;
 
   box-sizing: border-box;
   width: 34px;
@@ -423,13 +421,24 @@ a {
   background-color: transparent;
 }
 
-.button-calendar:hover path {
-  fill: #000000;
+.button-calendar::before {
+  font-family: "Sedona";
+  font-size: 22px;
+
+  content: "\e900";
+
+  color: #cacaca;
 }
 
-.button-calendar:focus path {
-  fill: #81b3d2;
+.button-calendar:hover::before,
+.button-calendar:focus::before {
+  color: #000000;
 }
+
+.button-calendar:active::before {
+  color: #81b3d2;
+}
+
 
 .search-form-item {
   position: relative;
@@ -584,37 +593,30 @@ a {
   user-select: none;
 }
 
-.filter-pool {
-
-}
-.filter-input-checkbox:hover ~ path {
-  fill: #000000;
-}
-
-.st1 {
-  font-family: "Sedona";
-}
-
-.filter-input-checkbox:checked + svg>.s1 {
-  fill: #000000;
-}
-
-.filter-input-checkbox ~ .filter-checkbox {
+.filter-input-checkbox + label::before {
   width: 27px;
   height: 23px;
   margin-right: 10px;
 
-  background-image: url("../img/checkbox-off.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  font-family: "Sedona";
+  font-size: 22px;
+
+  content: "\e901";
 }
 
-.filter-input-checkbox:checked ~ .filter-checkbox {
-  background-image: url("../img/checkbox-on.svg");
+.filter-input-checkbox:checked + label::before {
+  width: 27px;
+  height: 23px;
+  margin-right: 10px;
+
+  font-family: "Sedona";
+  font-size: 22px;
+
+  content: "\e902";
 }
 
-.filter-input-checkbox:disabled ~ .filter-checkbox {
-
+.filter-input-checkbox:disabled + label::before {
+  color: #6a6a6a;
 }
 
 
@@ -843,7 +845,7 @@ a {
 }
 
 .sort-page a {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 18px;
 
   opacity: 0.3;
@@ -861,7 +863,7 @@ a {
 }
 
 .sort-page-up {
-  margin-right: 12px;
+  margin-right: 10px;
 }
 
 .sort-page-active a {
@@ -948,32 +950,31 @@ a {
   background-color: #503e33;
 }
 
-.hotel-stars {
-  height: 17px;
-
-  background-image: url("../img/star.svg");
-  background-repeat: space;
-  background-size: 20px 17px;
+.hotel-stars::before {
+  font-family: "Sedona";
+  font-size: 16px;
+  line-height: 16px;
+  color: #81b3d2;
 }
 
-.hotel-stars-1 {
-  width: 18px;
+.hotel-stars-1::before {
+  content:"\e904";
 }
 
-.hotel-stars-2 {
-  width: 41px;
+.hotel-stars-2::before {
+  content:"\e904  \e904";
 }
 
-.hotel-stars-3 {
-  width: 64px;
+.hotel-stars-3::before {
+  content:"\e904  \e904  \e904";
 }
 
-.hotel-stars-4 {
-  width: 87px;
+.hotel-stars-4::before {
+  content:"\e904  \e904  \e904  \e904";
 }
 
-.hotel-stars-5 {
-  width: 110px;
+.hotel-stars-5::before {
+  content:"\e904  \e904  \e904  \e904  \e904";
 }
 
 .hotel-rate-column {
@@ -986,7 +987,7 @@ a {
 }
 
 .hotel-rate {
-  padding: 0 15px;
+  padding: 5px 15px;
 
   font-weight: normal;
 
@@ -1048,6 +1049,27 @@ a {
   background-color: #81b3d2;
 }
 
+.social-button::after {
+  font-family: "Sedona";
+  font-size: 16px;
+
+  color: #ffffff;
+}
+
+.social-twitter::after {
+  content: "\e905";
+}
+
+.social-facebook::after {
+  font-size: 22px;
+
+  content: "\e903";
+}
+
+.social-youtube::after {
+  content: "\e906";
+}
+
 .social-button:hover,
 .social-button:focus {
   background-color: #669ec0;
@@ -1057,9 +1079,10 @@ a {
   background-color: #5496bd;
 }
 
-.social-button:active path {
-  fill: #88b6d1;
+.social-button:active::after {
+  color: #88b6d1;
 }
+
 
 .footer-copyright {
   display: flex;
