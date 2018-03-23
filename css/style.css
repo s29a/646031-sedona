@@ -76,12 +76,14 @@ a {
 .main-header-logo {
   position: absolute;
   top: 0;
-  right: 0;
-  left: 0;
+  left: 50%;
 
-  width: 140px;
-  margin: 0 auto;
+  width: 138px;
+  width: 138px;
+  height: 70px;
+  margin-left: -69px;
 }
+
 
 .main-navigation {
   font-size: 14px;
