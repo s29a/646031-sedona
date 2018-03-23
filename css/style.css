@@ -17,10 +17,11 @@ a {
 }
 
 @font-face {
-    font-family: "Sedona";
-    src: url("../fonts/Sedona.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Sedona";
+  font-weight: normal;
+  font-style: normal;
+
+  src: url("../fonts/Sedona.woff") format("woff");
 }
 
 .button {
@@ -84,7 +85,6 @@ a {
   margin-left: -69px;
 }
 
-
 .main-navigation {
   font-size: 14px;
   font-weight: bold;
@@ -95,6 +95,7 @@ a {
 
 .site-navigation {
   display: flex;
+  flex-wrap: wrap;
 
   margin: 0;
   padding: 15px 0;
@@ -106,23 +107,23 @@ a {
   flex-basis: 20%;
 }
 
-.site-navigation li:nth-child(1) {
+.site-navigation li:nth-child(4n+1) {
   margin-left: 6%;
 
   text-align: left;
 }
 
-.site-navigation li:nth-child(2) {
+.site-navigation li:nth-child(4n+2) {
   margin-right: auto;
 
   text-align: left;
 }
 
-.site-navigation  li:nth-child(3) {
+.site-navigation  li:nth-child(4n+3) {
   text-align: right;
 }
 
-.site-navigation  li:nth-child(4) {
+.site-navigation  li:nth-child(4n+4) {
   margin-right: 6%;
 
   text-align: right;
@@ -247,7 +248,7 @@ a {
   box-sizing: border-box;
   max-width: 33.333333%;
   min-height: 256px;
-  padding: 45px 30px;
+  padding: 45px 5% 35px;
 
   text-align: center;
 }
@@ -257,7 +258,7 @@ a {
 
   box-sizing: border-box;
   max-width: 33.333333%;
-  padding: 55px 45px;
+  padding: 55px 5%;
 
   text-align: center;
 }
@@ -442,7 +443,6 @@ a {
   color: #81b3d2;
 }
 
-
 .search-form-item {
   position: relative;
 
@@ -580,7 +580,7 @@ a {
 
 .filter-option {
   margin-bottom: 25px;
-/*  padding-left: 40px;*/
+  /*  padding-left: 40px;*/
 }
 
 .filter-option:last-of-type {
@@ -963,27 +963,28 @@ a {
   font-family: "Sedona";
   font-size: 16px;
   line-height: 16px;
+
   color: #81b3d2;
 }
 
 .hotel-stars-1::before {
-  content:"\e904";
+  content: "\e904";
 }
 
 .hotel-stars-2::before {
-  content:"\e904  \e904";
+  content: "\e904  \e904";
 }
 
 .hotel-stars-3::before {
-  content:"\e904  \e904  \e904";
+  content: "\e904  \e904  \e904";
 }
 
 .hotel-stars-4::before {
-  content:"\e904  \e904  \e904  \e904";
+  content: "\e904  \e904  \e904  \e904";
 }
 
 .hotel-stars-5::before {
-  content:"\e904  \e904  \e904  \e904  \e904";
+  content: "\e904  \e904  \e904  \e904  \e904";
 }
 
 .hotel-rate-column {
@@ -1091,7 +1092,6 @@ a {
 .social-button:active::after {
   color: #88b6d1;
 }
-
 
 .footer-copyright {
   display: flex;
