@@ -1053,9 +1053,6 @@ a {
   background-color: #81b3d2;
 }
 
-.social-button::after {
-}
-
 .social-twitter::after {
   content: "";
   display: block;
@@ -1092,8 +1089,16 @@ a {
   background-color: #5496bd;
 }
 
-.social-button:active::after {
-  color: #88b6d1;
+.social-youtube:active::after {
+  background-image: url("../img/sprite.svg#youtube-active-view");
+}
+
+.social-facebook:active::after {
+  background-image: url("../img/sprite.svg#facebook-active-view");
+}
+
+.social-twitter:active::after {
+  background-image: url("../img/sprite.svg#twitter-active-view");
 }
 
 .footer-copyright {

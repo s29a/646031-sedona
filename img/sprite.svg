@@ -58,6 +58,9 @@
   <view id="logo-htmlacademy-view" viewBox="0 500 108.08 36.85" />
   <view id="logo-htmlacademy-hover-view" viewBox="0 540 108.08 36.85" />
   <view id="logo-htmlacademy-active-view" viewBox="0 580 108.08 36.85" />
+  <view id="twitter-active-view" viewBox="0 620 17 15" />
+  <view id="youtube-active-view" viewBox="0 640 20 14" />
+  <view id="facebook-active-view" viewBox="0 660 12 22" />
 
   <use xlink:href="#twitter" style="fill: #ffffff;" width="17" height="15" x="0" y="0"></use>
   <use xlink:href="#youtube" style="fill: #ffffff;" width="20" height="14" x="0" y="20"></use>
@@ -76,4 +79,7 @@
   <use xlink:href="#logo-htmlacademy" style="fill: #231f20;" width="108.08" height="36.85" x="0" y="500"></use>
   <use xlink:href="#logo-htmlacademy" style="fill: #81b3d2;" width="108.08" height="36.85" x="0" y="540"></use>
   <use xlink:href="#logo-htmlacademy" style="fill: #bdbbbc;" width="108.08" height="36.85" x="0" y="580"></use>
+  <use xlink:href="#twitter" style="fill: #88b6d1;" width="17" height="15" x="0" y="620"></use>
+  <use xlink:href="#youtube" style="fill: #88b6d1;" width="20" height="14" x="0" y="640"></use>
+  <use xlink:href="#facebook" style="fill: #88b6d1;" width="12" height="22" x="0" y="660"></use>
 </svg>
