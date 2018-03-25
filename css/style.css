@@ -244,7 +244,7 @@ a {
   box-sizing: border-box;
   max-width: 33.333333%;
   min-height: 256px;
-  padding: 45px 6% 15px;
+  padding: 45px 4% 15px;
 
   text-align: center;
 }
@@ -254,21 +254,23 @@ a {
 
   box-sizing: border-box;
   max-width: 33.333333%;
-  padding: 55px 6%;
+  min-height: 330px;
+  padding: 55px 4%;
 
   text-align: center;
 }
 
 .feature-item p {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  width: 95%;
 }
 
 .feature-accommodation::before {
   display: block;
 
   width: 75px;
-  height: 72px;
+  height: 80px;
   margin: 0 auto 30px;
 
   content: "";
@@ -280,7 +282,7 @@ a {
   display: block;
 
   width: 74px;
-  height: 70px;
+  height: 78px;
   margin: 0 auto 30px;
 
   content: "";
@@ -292,7 +294,7 @@ a {
   display: block;
 
   width: 64px;
-  height: 76px;
+  height: 80px;
   margin: 0 auto 30px;
 
   content: "";
@@ -301,8 +303,9 @@ a {
 }
 
 .advantages p {
-  margin: 0;
+  margin: 0 auto;
   margin-top: 20px;
+  width: 90%;
   padding: 0;
 }
 
@@ -315,6 +318,10 @@ a {
 
 .advantages-photo h2 {
   color: #ffffff;
+}
+
+.advantages-photo p {
+  width: 100%;
 }
 
 .advantages-photo .right-img {
@@ -357,7 +364,7 @@ a {
 }
 .search-intro {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
   padding: 0;
 
   line-height: 24px;
@@ -597,6 +604,7 @@ a {
   height: 23px;
   margin-right: 10px;
   content: "";
+  display: block;
 
   background-image: url("../img/sprite.svg#checkbox-off-view");
 }
@@ -606,6 +614,7 @@ a {
   height: 23px;
   margin-right: 10px;
   content: "";
+  display:block;
 
   background-image: url("../img/sprite.svg#checkbox-on-view");
   background-position: left;
@@ -1074,8 +1083,8 @@ a {
 .social-youtube::after {
   content: "";
   display: block;
-  width: 20px;
-  height: 14px;
+  width: 23px;
+  height: 20px;
 
   background-image: url("../img/sprite.svg#youtube-view");
 }
