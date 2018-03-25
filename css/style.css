@@ -261,9 +261,9 @@ a {
 }
 
 .feature-item p {
+  width: 95%;
   margin: 0 auto;
   padding: 0;
-  width: 95%;
 }
 
 .feature-accommodation::before {
@@ -303,9 +303,9 @@ a {
 }
 
 .advantages p {
+  width: 90%;
   margin: 0 auto;
   margin-top: 20px;
-  width: 90%;
   padding: 0;
 }
 
@@ -429,10 +429,12 @@ a {
 }
 
 .button-calendar::before {
-  content: "";
   display: block;
+
   width: 21px;
   height: 22px;
+
+  content: "";
 
   background-image: url("../img/sprite.svg#calendar-view");
 }
@@ -600,21 +602,25 @@ a {
 }
 
 .filter-input-checkbox + label::before {
+  display: block;
+
   width: 27px;
   height: 23px;
   margin-right: 10px;
+
   content: "";
-  display: block;
 
   background-image: url("../img/sprite.svg#checkbox-off-view");
 }
 
 .filter-input-checkbox:checked + label::before {
+  display: block;
+
   width: 27px;
   height: 23px;
   margin-right: 10px;
+
   content: "";
-  display:block;
 
   background-image: url("../img/sprite.svg#checkbox-on-view");
   background-position: left;
@@ -629,7 +635,6 @@ a {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
 }
-
 
 .filter-cost {
   width: 90%;
@@ -963,6 +968,7 @@ a {
 
 .hotel-stars {
   height: 17px;
+
   content: "";
 
   background-image: url("../img/sprite.svg#star-view");
@@ -1063,28 +1069,34 @@ a {
 }
 
 .social-twitter::after {
-  content: "";
   display: block;
+
   width: 17px;
   height: 15px;
+
+  content: "";
 
   background-image: url("../img/sprite.svg#twitter-view");
 }
 
 .social-facebook::after {
-  content: "";
   display: block;
+
   width: 12px;
   height: 22px;
+
+  content: "";
 
   background-image: url("../img/sprite.svg#facebook-view");
 }
 
 .social-youtube::after {
-  content: "";
   display: block;
+
   width: 23px;
   height: 20px;
+
+  content: "";
 
   background-image: url("../img/sprite.svg#youtube-view");
 }
