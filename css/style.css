@@ -153,8 +153,6 @@ a {
   justify-content: space-between;
   align-items: center;
 
-  margin-bottom: 60px;
-
   background-image: url("../img/index-intro.jpg");
   background-repeat: no-repeat;
   background-position: 50% -56px;
@@ -181,7 +179,7 @@ a {
 }
 
 .intro {
-  padding: 0 6%;
+  padding: 60px 6% 50px;
 }
 
 .intro-slogan {
@@ -200,7 +198,6 @@ a {
 
 .intro-text {
   margin: 0;
-  margin-bottom: 50px;
   padding: 0;
 
   line-height: 26px;
@@ -232,8 +229,6 @@ a {
 
 .advantages-columns {
   display: flex;
-
-  margin-bottom: 50px;
 
   background-color: #eeeeee;
 }
@@ -347,7 +342,7 @@ a {
 .search {
   position: relative;
 
-  padding: 0 6%;
+  padding: 50px 6% 0;
 
   text-align: center;
 }
@@ -584,8 +579,7 @@ a {
 }
 
 .filter-option {
-  margin-bottom: 25px;
-  /*  padding-left: 40px;*/
+  margin-bottom: 23px;
 }
 
 .filter-option:last-of-type {
@@ -606,7 +600,7 @@ a {
 
   width: 27px;
   height: 23px;
-  margin-right: 10px;
+  margin-right: 15px;
 
   content: "";
 
@@ -614,14 +608,6 @@ a {
 }
 
 .filter-input-checkbox:checked + label::before {
-  display: block;
-
-  width: 27px;
-  height: 23px;
-  margin-right: 10px;
-
-  content: "";
-
   background-image: url("../img/sprite.svg#checkbox-on-view");
   background-position: left;
 }
@@ -749,7 +735,8 @@ a {
   display: block;
 
   margin: 0 auto;
-  padding: 6px 35px;
+  margin-left: 35%;
+  padding: 5px 32px;
 
   font-weight: normal;
 
