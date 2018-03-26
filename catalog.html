@@ -32,13 +32,13 @@
                   <legend>Инфраструктура:</legend>
                     <ul>
                       <li class="filter-option">
-                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked disabled>
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
                         <label for="filter-pool">
                           Бассейн
                         </label>
                       </li>
                       <li class="filter-option">
-                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"   name="parking" id="filter-parking" disabled>
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"   name="parking" id="filter-parking">
                         <label for="filter-parking">Парковка</label>
                       </li>
                       <li class="filter-option">
@@ -72,11 +72,11 @@
                     <legend>Стоимость в сутки (р):</legend>
                     <div class="cost-controls">
                       <div class="cost-controls-column">
-                        <label for="filter-cost-min">От</label>
+                        <label class="filter-cost-min" for="filter-cost-min">От</label>
                         <input  type="text" name="cost-min" value="0" id="filter-cost-min">
                       </div>
                       <div class="cost-controls-column">
-                        <label class="filter-cost-max">До</label>
+                        <label class="filter-cost-max" for="filter-cost-max">До</label>
                         <input type="text" name="cost-max" value="3000" id="filter-cost-max">
                       </div>
                     </div>
