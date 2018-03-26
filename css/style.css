@@ -261,40 +261,31 @@ a {
   padding: 0;
 }
 
-.feature-accommodation::before {
+.feature-item::before {
   display: block;
 
-  width: 75px;
   height: 80px;
-  margin: 0 auto 30px;
+  margin: 0 auto 25px;
 
   content: "";
+}
 
-  background-image: url("../img/sprite.svg#icon1-view");
+.feature-accommodation::before {
+  width: 75px;
+
+  background-image: url("../img/icon-1.svg");
 }
 
 .features-food::before {
-  display: block;
-
   width: 74px;
-  height: 78px;
-  margin: 0 auto 30px;
 
-  content: "";
-
-  background-image: url("../img/sprite.svg#icon3-view");
+  background-image: url("../img/icon-3.svg");
 }
 
 .features-souvenirs::before {
-  display: block;
-
   width: 64px;
-  height: 80px;
-  margin: 0 auto 30px;
 
-  content: "";
-
-  background-image: url("../img/sprite.svg#icon2-view");
+  background-image: url("../img/icon-2.svg");
 }
 
 .advantages p {
@@ -423,24 +414,13 @@ a {
   background-color: transparent;
 }
 
-.button-calendar::before {
-  display: block;
-
-  width: 21px;
-  height: 22px;
-
-  content: "";
-
-  background-image: url("../img/sprite.svg#calendar-view");
+.button-calendar:hover path,
+.button-calendar:focus path {
+  fill: #000000;
 }
 
-.button-calendar:hover::before,
-.button-calendar:focus::before {
-  background-image: url("../img/sprite.svg#calendar-hover-view");
-}
-
-.button-calendar:active::before {
-  background-image: url("../img/sprite.svg#calendar-active-view");
+.button-calendar:active path {
+  fill: #81b3d2;
 }
 
 .search-form-item {
@@ -594,22 +574,19 @@ a {
   cursor: pointer;
   user-select: none;
 }
-
-.filter-input-checkbox + label::before {
-  display: block;
-
-  width: 27px;
-  height: 23px;
-  margin-right: 15px;
-
-  content: "";
-
-  background-image: url("../img/sprite.svg#checkbox-off-view");
+.check-off,
+.check-on {
+  fill: #000000;
+  visibility: hidden;
 }
 
-.filter-input-checkbox:checked + label::before {
-  background-image: url("../img/sprite.svg#checkbox-on-view");
-  background-position: left;
+.filter-input-checkbox + label~.check-off {
+  visibility: visible;
+}
+
+.filter-input-checkbox:checked label+.check-on {
+  visibility: visible;
+  /*background-image: url("../img/checkbox-on.svg");*/
 }
 
 .filter-input-checkbox:disabled + label::before {
@@ -958,7 +935,7 @@ a {
 
   content: "";
 
-  background-image: url("../img/sprite.svg#star-view");
+  background-image: url("../img/star.svg");
   background-repeat: space;
   background-size: 20px 17px;
 }
@@ -1055,39 +1032,6 @@ a {
   background-color: #81b3d2;
 }
 
-.social-twitter::after {
-  display: block;
-
-  width: 17px;
-  height: 15px;
-
-  content: "";
-
-  background-image: url("../img/sprite.svg#twitter-view");
-}
-
-.social-facebook::after {
-  display: block;
-
-  width: 12px;
-  height: 22px;
-
-  content: "";
-
-  background-image: url("../img/sprite.svg#facebook-view");
-}
-
-.social-youtube::after {
-  display: block;
-
-  width: 23px;
-  height: 20px;
-
-  content: "";
-
-  background-image: url("../img/sprite.svg#youtube-view");
-}
-
 .social-button:hover,
 .social-button:focus {
   background-color: #669ec0;
@@ -1097,17 +1041,10 @@ a {
   background-color: #5496bd;
 }
 
-.social-youtube:active::after {
-  background-image: url("../img/sprite.svg#youtube-active-view");
+.social-button:active path{
+  fill: #88b6d1;
 }
 
-.social-facebook:active::after {
-  background-image: url("../img/sprite.svg#facebook-active-view");
-}
-
-.social-twitter:active::after {
-  background-image: url("../img/sprite.svg#twitter-active-view");
-}
 
 .footer-copyright {
   display: flex;
