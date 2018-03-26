@@ -19,7 +19,7 @@ a {
 .button {
   display: inline-block;
 
-  padding: 3px 16px;
+  padding: 3px 17px;
 
   font: inherit;
   font-weight: bold;
@@ -574,23 +574,25 @@ a {
   cursor: pointer;
   user-select: none;
 }
-.check-off,
-.check-on {
-  fill: #000000;
-  visibility: hidden;
+
+
+.filter-input-checkbox + label::before {
+  width: 27px;
+  height: 23px;
+  margin-right: 15px;
+  content: "";
+
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-size: 27px 60px;
 }
 
-.filter-input-checkbox + label~.check-off {
-  visibility: visible;
-}
-
-.filter-input-checkbox:checked label+.check-on {
-  visibility: visible;
-  /*background-image: url("../img/checkbox-on.svg");*/
+.filter-input-checkbox:checked + label::before {
+  background-image: url("../img/checkbox-on.svg");
 }
 
 .filter-input-checkbox:disabled + label::before {
-  color: #6a6a6a;
+  background-position: 0 -30px;
 }
 
 .filter-input-checkbox:focus + label::before {
@@ -937,7 +939,7 @@ a {
 
   background-image: url("../img/star.svg");
   background-repeat: space;
-  background-size: 20px 17px;
+  background-size: 21px 17px;
 }
 
 .hotel-stars-1 {
@@ -945,19 +947,19 @@ a {
 }
 
 .hotel-stars-2 {
-  width: 41px;
+  width: 42px;
 }
 
 .hotel-stars-3 {
-  width: 64px;
+  width: 66px;
 }
 
 .hotel-stars-4 {
-  width: 87px;
+  width: 90px;
 }
 
 .hotel-stars-5 {
-  width: 110px;
+  width: 114px;
 }
 
 .hotel-rate-column {
