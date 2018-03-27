@@ -509,6 +509,12 @@ a {
   height: 473px;
 }
 
+.map iframe {
+  border: none;
+  width: 100%;
+  height: 593px;
+}
+
 .map-column {
   display: flex;
   justify-content: center;
