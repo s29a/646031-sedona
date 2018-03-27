@@ -504,12 +504,16 @@ a {
 }
 
 .map {
-  display: flex;
   overflow: hidden;
-  justify-content: center;
 
   height: 473px;
 }
+
+.map-column {
+  display: flex;
+  justify-content: center;
+}
+
 
 .filter {
   color: #ffffff;
