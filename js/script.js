@@ -53,8 +53,8 @@ form.addEventListener("submit", function (evt) {
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
-    if (form.classList.contains("search-form-hide")) {
-      form.classList.remove("search-form-hide");
+    if (!form.classList.contains("search-form-hide")) {
+      form.classList.add("search-form-hide");
       if (form.classList.contains("search-form-error")) {
         form.classList.remove("search-form-error");
       }
