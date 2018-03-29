@@ -183,6 +183,7 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/index-intro.jpg");
   background-repeat: no-repeat;
   background-position: 50% -56px;
+  background-color: #81b3d2;
 }
 
 .welcome::before {
@@ -661,6 +662,7 @@ input[type="radio"].visually-hidden {
   height: 593px;
 
   border: none;
+  background-image: url("../img/map.png");
 }
 
 .map-column {
