@@ -810,14 +810,15 @@ a {
   display: inline-block;
 
   box-sizing: border-box;
-  width: 46.4%;
+  width: 47%;
   margin: 0 auto;
-  padding-left: 20%;
+  padding-right: 11%;
 
   line-height: 32px;
 
   cursor: pointer;
   vertical-align: top;
+  text-align: right;
 }
 
 .cost-controls input {
@@ -1075,6 +1076,8 @@ a {
       flex-wrap: wrap;
   -ms-flex-line-pack: justify;
        align-content: space-between;
+
+  width: 380px;
 }
 
 .hotel-column {
