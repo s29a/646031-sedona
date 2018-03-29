@@ -684,7 +684,7 @@ a {
   list-style: none;
 }
 
-.filter-columns {
+.filter-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -695,21 +695,21 @@ a {
   padding: 26px 6% 30px;
 }
 
-.filter-column:first-child {
-  width: 180px;
-  margin-right: 75px;
-}
-
-.filter-column:last-child {
-  width: 33.333333%;
-  margin-left: auto;
-}
-
 .filter-group {
   margin: 0;
   padding: 0;
 
   border: none;
+}
+
+.filter-infrastructure {
+  width: 180px;
+  margin-right: 75px;
+}
+
+.filter-column {
+  width: 33.333333%;
+  margin-left: auto;
 }
 
 .filter-option {
